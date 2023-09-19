@@ -1,0 +1,223 @@
+a{
+    text-decoration: none; color: #fff;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none; }
+.bold {  font-family: 'Raleway', sans-serif; font-weight: 700; }
+.nav {  font-family: 'Raleway', sans-serif; }
+
+.header-logo{ vertical-align: middle; padding-right: 50%;}
+.header-nav-menu{
+    color: hsl(228, 22%, 44%);
+    padding-right: 3%;
+    font-size: 1.1rem;
+}
+.header-nav-menu:hover{
+    color: hs1(243, 87%, 12%);
+}
+.site-header{
+    padding: 3% 5%;
+}
+.illustration-container{
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 114px;
+    width: 100%;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+}
+.btn{
+    width: 50%;
+    background: hs1(224, 93%, 58%);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-size: 1.25rem;
+}
+.btn:hover{
+    background: hs1(224, 93%, 38%);
+}
+.email{
+    width: 40%;
+    border: 1px solid hs1(243, 87%, 12% );
+    border-radius: 4px;
+    padding: 3% 7%;
+    margin-right: 5%;
+    font-size: 1.05rem;
+}
+.img{
+    width: 100%;
+}
+link{
+    color: hsl(170, 45%, 43%);
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+.link:hover{
+    color: hsl(170,45%, 23%);
+}
+.section{display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+
+}
+.text {  font-size: 1.25rem; margin: 7% 0; }
+.title {  font-size: 2rem; color: hsl(243, 87%, 12%); }
+.section-2 {  background-color: hsl(240, 75%, 98%); padding-top: 0; }
+.section-2 .section-left {  padding-top: 0; margin-top: 0; }
+.section-3 {  background-color: hsl(238, 22%, 44%); color: #fff; }
+.section-3 .btn {  display: inline-block; width: fit-content; }
+
+.section-3 .email {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.section-3 .main-content__title {  color: #fff; }
+.section-left {  flex: 1; margin-right: 5%; margin-top: 5%; }
+.section-right {  flex: 1; }
+
+/* Testimonial Card */
+.card {
+  width: 80%;
+  text-align: left;
+  background-color: #fff;
+  color: hsl(243, 87%, 12%);
+  margin-top: 5%;
+  padding: 5%;
+  box-shadow: 0 0 15px 2px hsl(0, 0%, 75%);
+}
+
+.card__footer {  width: 100%; }
+.card__footer__attr {  padding-top: 8%; }
+
+.card__footer__avatar {
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+  padding: 5%;
+}
+
+/* Footer */
+.attribution {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 11px;
+}
+
+.attribution__link {  color: hsl(228, 45%, 54%); text-decoration: underline; }
+.contact-info__item {  padding-bottom: 10%; }
+
+.footer-logo {
+  padding: 5% 3% 0;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.main {  display: flex; justify-content: space-around; }
+.footer-nav {  display: grid; }
+.footer-nav__menu {  padding-bottom: 8%; }
+
+.site {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.social-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+}
+
+.social-menu__link {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Responsive layout - scaled down */
+/* iPad Pro and similar screens */
+@media screen and (max-width: 1024px) {
+  .header-logo {  padding-right: 40%; }
+
+  .email {
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .section-1 .btn {
+    display: inline-block;
+    margin-top: 5%;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* iPad and similar screens */
+@media screen and (max-width: 768px) {
+  .footer__attribution {  padding-top: 5%; }
+  .header-logo {  padding-right: 30%; }
+}
+
+/* iPhone and similar screens */
+@media screen and (max-width: 414px) {
+  .card {  margin: 8% auto; }
+  .footer-logo {  padding: 10%; }
+  .footer-main {  display: block; }
+  .footer-nav {  padding-left: 10%; }
+  .header-logo {  width: 30%; padding-right: 10%; }
+  .header-nav__menu {  font-size: 1rem; }
+
+  .illustration-container {
+    background-image: url('images/bg-curve-mobile.svg');
+    height: 53px;
+  }
+
+  .main-content {  text-align: center; }
+  text {  font-size: 1rem; }
+  .title {  font-size: 1.75rem; line-height: 1.5; }
+  .main-content__section {  flex-direction: column-reverse; }
+  .nav1 {  padding-top: 5%; }
+  .nav2 {  padding-top: 8%; }
+  .section-1 {  margin-bottom: 20%; }
+  .section-2 .main-content__title {  font-size: 1.25rem; }
+  .section-3 {  flex-direction: column; }
+  .section-3 .section-right {  padding-top: 10%; padding-bottom: 10%; }
+  .section-left {  margin: 0; }
+  .section-right {  padding-top: 20%; }
+  .site-header {  padding: 5%; }
+  .social-menu {  display: block; padding: 5% 30% 2%; }
+  .social-menu__link {  margin-right: 5%; }
+}
+
+/* Galaxy S5 and similar screens */
+@media screen and (max-width: 360px) {
+  .header-nav__menu {  font-size: .9rem; }
+}
+
+/* iPhone 5/SE and similar screens */
+@media screen and (max-width: 320px) {
+  .header-nav__menu {  font-size: .8rem; }
+  .social-menu {  padding-left: 25%; padding-right: 25%; }
+}
+
